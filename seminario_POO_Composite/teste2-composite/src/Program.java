@@ -25,9 +25,9 @@ public class Program {
         graphic.add(graphic2);
        // Printa quatro vezes a String Ellipse ( Ele printa o grafico completo).
         graphic.print();
-        System.out.println("-------");
-        graphic1.print();
-        System.out.println("-------");
-        graphic2.print();
+//        System.out.println("-------");
+//        graphic1.print();
+//        System.out.println("-------");
+//        graphic2.print();
     }
 }
