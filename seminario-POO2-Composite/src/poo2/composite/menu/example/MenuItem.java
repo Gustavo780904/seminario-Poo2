@@ -20,7 +20,7 @@ public class MenuItem extends MenuComponent {
 	
 	@Override
 	public void remove(MenuComponent component) {
-		// Ignore
+		
 	}
 	
 	/**
@@ -35,7 +35,6 @@ public class MenuItem extends MenuComponent {
 	public void print() {
 		var indent = getIndentation();
 		
-		// Item de menu tem que lembrar de imprimir o preço
 		System.out.println(indent + id + " - " + name + ": R$" + price);
 		
 		var spaces = "   ";
@@ -43,7 +42,8 @@ public class MenuItem extends MenuComponent {
 		for (int i = 0; i < id.length(); i++)
 			spaces += " ";
 		
-		System.out.println(indent + spaces + description);
+		System.out.printf(indent + spaces + description);
+		System.out.println();
 	}
 }
 
